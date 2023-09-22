@@ -1,0 +1,24 @@
+.navigationmenu {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    font-family: Impact;
+    text-align: center;
+    }
+    
+    
+    .navigationmenu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    position: relative;
+    text-decoration: none;
+    margin: 0 10px;
+    }
+    
+    
+    
+    
+    
