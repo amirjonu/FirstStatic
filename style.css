@@ -1,24 +1,221 @@
-.navigationmenu {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+}
+li{
+    list-style: none;
+}
+.navigationmenu{
+    min-height: 70px;
     display: flex;
-    justify-content: center;
-    background-color: #000000;
-    font-family: Impact;
-    text-align: center;
-    }
-    
-    
-    .navigationmenu a {
-    float: left;
-    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+a{
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    position: relative;
     text-decoration: none;
-    margin: 0 10px;
+}
+
+.hamburger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.pageslink{
+    transition: 0.7s ease;
+}
+
+.pageslink:hover{
+    color: blue;
+}
+.bars{
+    cursor: pointer;
+
+}
+.line{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
+}
+
+@media{
+    .bars.active .line:nth-child(2){
+        opacity: 0;
     }
+    .bars.active .line:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .bars.active .line:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+     }
+}
     
     
-    
-    
-    
+    .hamburger{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap:0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 100;
+    }
+
+    .alllinks{
+        margin: 16px 0;
+    }
+
+    .hamburger.active{
+        left:0;
+    }
+
+.images{
+    padding: 20px;
+}
+
+.title{
+    color:white;
+    justify-content:flex;
+    text-align: center;
+}
+
+body{
+    display: grid;
+}
+
+/*https://codepen.io/raubaca/pen/obaZmG
+pokeball code*/
+.pokeball{
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    display: block;
+    width: 192px;
+  height: 192px;
+  background: radial-gradient(
+      white 16px,
+      black 17px 18px,
+      white 19px 24px,
+      black 25px 32px,
+      transparent 33px
+    ),linear-gradient(to bottom, red 0 80px, black 81px 96px, white 97px 100%);
+    border-radius: 50%;
+    border: 8px solid black;
+    box-shadow: inset -16px -8px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .pokeball-clicked{
+    animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) 1.25s 3,
+    catch 0.08s ease-out 5.00s forwards;
+  }
+
+  /* Animation */
+  @keyframes shake {
+    0% {
+      transform: translateX(0) rotate(0);
+    }
+    20% {
+      transform: translateX(-10px) rotate(-20deg);
+    }
+    30% {
+      transform: translateX(10px) rotate(20deg);
+    }
+    50% {
+      transform: translateX(-10px) rotate(-10deg);
+    }
+    60% {
+      transform: translateX(10px) rotate(10deg);
+    }
+    100% {
+      transform: translateX(0) rotate(0);
+    }
+  }
+
+  @keyframes catch {
+    to {
+      opacity: 0;
+    }
+  }
+
+.welcomeMessage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 40%;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 100%;
+    transition: 0.3s;
+}
+.toPokemon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 55%;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.welcomeMessage.active{
+    left:0;
+}
+
+.toPokemon.active{
+    left:0;
+}
+
+/*https://nikitahl.com/text-gradient-with-css
+for gardient text*/
+.gardientTitle{
+    background-image: linear-gradient(45deg,#ff7200,#5c00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 100px;
+}
+  
+  .gardientTitle:hover{
+    background-image: linear-gradient(45deg,#5c00ff,#ff7200);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+
+.videos{
+    top:10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video{
+    position: absolute;
+    padding: 20px; 
+    width: 50%;
+}
+
+
+
+

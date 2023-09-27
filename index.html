@@ -7,17 +7,41 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class= "navigationmenu">
-<a href="index.html">Home</a>
-<a href="watchpokemon.html">PokeTV</a>
-<a href="buycards.html">Cards</a>
-<a href="relatedinfo.html">Related</a>
-</div>
+
+<!-- The link to all the hamburger menu tutorial 
+    https://www.youtube.com/watch?v=flItyHiDm7E-->
+<header>
+<nav class="navigationmenu">
+    <h1 class="title">Welcome</h1>
+ <ul class="hamburger">
+    <li class="alllinks">
+        <a class= "pageslink" href="index.html">Home</a>
+    </li>
+    <li class="alllinks">
+        <a class= "pageslink" href="watchpokemon.html">PokeTV</a>
+    </li>
+    <li class="alllinks">
+        <a class= "pageslink" href="buycards.html">Cards</a>
+    </li>
+    <li class="alllinks">
+        <a class= "pageslink" href="relatedinfo.html">About Me</a>
+    </li>
+ </ul>
+ <div class="bars">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+ </div>
+</nav>
+</header>
+
+<div class="pokeball" id="pokeball"></div>
+<div class="welcomeMessage"><p class="gardientTitle">Welcome</p></div>
+<div class="toPokemon"><p class="gardientTitle">To Pokemon</p></div>
 
 
-<div class="images">
-<img src="pickachu.jpeg" alt="Pikachu" width="300px" height="300px">
-<p>Pikachu is amazing! I changed stuff</p>
-</div>
+<script src="script.js"></script>
+
+
 </body>
 </html>
