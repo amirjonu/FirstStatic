@@ -206,16 +206,29 @@ for gardient text*/
 
 .videos{
     top:10%;
-    display: flex;
+    width: 100%;
     justify-content: space-between;
+    align-items: center; 
+   float: left;
 }
 
 .video{
-    position: absolute;
+  float: left;
     padding: 20px; 
     width: 50%;
 }
 
 
-
-
+.images {
+  align-items: center; 
+  float: left;
+}
+.image{
+  height: 80%;
+  width: 25%;
+  float: left;
+  padding: 20px;
+}
+table, th, td {
+  border: 1px solid black;
+}
