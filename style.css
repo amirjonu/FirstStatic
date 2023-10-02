@@ -205,18 +205,17 @@ for gardient text*/
 
 
 .videos{
-    top:10%;
-    width: 100%;
-    align-items: center; 
-   float: left;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
 }
 
 .video{
-  float: left;
-    padding-top: 30px; 
-    padding-left: 80px;
-    padding-right:80px;
-    padding-bottom: 10px;
+  width: 516px;
+  height: 316px;
 }
 
 
