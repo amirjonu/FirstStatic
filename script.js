@@ -35,3 +35,11 @@ function checkOpacity() {
 pokeball.addEventListener("click", () => {
     setTimeout(checkOpacity, 5500); 
 });
+
+
+function openEmail() {
+    var email = 'amirjon5321@gmail.com';
+    var subject = 'Message';
+    var stuff = 'Hello,\n\n: My name is '+ '. ';
+    window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(stuff);
+}

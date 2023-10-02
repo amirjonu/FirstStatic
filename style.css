@@ -127,7 +127,7 @@ pokeball code*/
 
   /* Animation */
   @keyframes shake {
-    0% {
+    10% {
       transform: translateX(0) rotate(0);
     }
     20% {
@@ -207,15 +207,16 @@ for gardient text*/
 .videos{
     top:10%;
     width: 100%;
-    justify-content: space-between;
     align-items: center; 
    float: left;
 }
 
 .video{
   float: left;
-    padding: 20px; 
-    width: 50%;
+    padding-top: 30px; 
+    padding-left: 80px;
+    padding-right:80px;
+    padding-bottom: 10px;
 }
 
 
